@@ -1,5 +1,9 @@
 # API Spec
 
+## Prerequiste
+
+- Composer [Composer](https://getcomposer.org/download/)
+
 ## All Article
 
 Request :
