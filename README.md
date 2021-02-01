@@ -190,3 +190,52 @@ Response :
   "results": []
 }
 ```
+
+## Get Media
+
+Request :
+
+- Method : GET
+- Endpoint : `http://localhost:8080/assets/images/gambar5.png`
+
+- Body :
+
+Response :
+
+```
+SHOW IMAGE
+```
+
+## Upload Media
+
+Request :
+
+- sha256 file ([SHA-256](https://emn178.github.io/online-tools/sha256_checksum.html)) then result sha265 convert to hex to base64 ([HEX TO BASE64](https://base64.guru/converter/encode/hex)) change "/" to "\_" and "+" to "-"
+- Method : PUT
+- Endpoint : `localhost:8080/api/media/upload/Qi2ElGy1PI-UPxb_v80OoZaxLFeh-rLW6vE_X6E1jOg=?path=/images/news.png`
+- Params :
+
+```json
+{
+  "path": "/images/news.png"
+}
+```
+
+- Header :
+
+```json
+{
+  "X-Context-ID": "53583336-db65-4d53-9c59-c7a6167215be"
+}
+```
+
+Response :
+
+```json
+{
+  "status": 200,
+  "error": false,
+  "message": "Ok.",
+  "results": []
+}
+```
