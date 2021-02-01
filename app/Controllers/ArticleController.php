@@ -16,7 +16,7 @@ class ArticleController extends Controller
     $page = (int) isset($_GET["page"]) ? $_GET["page"] : 1;
     $search = (string) isset($_GET["search"]) ? $_GET["search"] : "";
     $sort = (string) isset($_GET["sort"]) == "newer" ? "DESC" : "ASC";
-    $sortBy = (string) isset($_GET["sort"]) ? $_GET["sort"] : "title";
+    $sortBy = (string) isset($_GET["sortBy"]) ? $_GET["sortBy"] : "title";
     $show = (int) isset($_GET["show"]) ? $_GET["show"] : 5;
     $offset = ($page - 1) * $show;
     $articles = Article::select('uid', 'title', 'body', 'user_uid', 'event_uid', 'created_at', 'updated_at')
