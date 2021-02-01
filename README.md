@@ -85,11 +85,9 @@ Response :
 
 ```json
 {
-  "status": 200,
+  "status": 201,
   "error": false,
   "message": "Ok.",
-  "data": {
-    "token": "abcdef"
-  }
+  "results": []
 }
 ```
