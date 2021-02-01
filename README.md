@@ -1,5 +1,7 @@
 # API Spec
 
+## All Article
+
 Request :
 
 - Method : GET
@@ -57,6 +59,41 @@ Response :
     "nextUrl": "http://localhost:8080/api/articles?page=1&search=judul%20arti&sort=newer&sortBy=title&show=5?page=2",
     "prevUrl": "http://localhost:8080/api/articles?page=1&search=judul%20arti&sort=newer&sortBy=title&show=5?page=0",
     "total": 1
+  }
+}
+```
+
+## Store Article
+
+Request :
+
+- Method : POST
+- Endpoint : `http://localhost:8080/api/articles`
+- Body :
+
+```json
+{
+  "title": "judul artikel pertama",
+  "slug": "judul-artikel-pertama",
+  "body": "body pertama",
+  "tags": [
+    "0" => "fun",
+    "1" => "sports"
+  ],
+  "user_uid": "ffeab53d-a1c4-405b-b114-95afce4eb8e9",
+  "event_uid": "97404f1b-a63a-4004-be4e-10db5e1b22cc"
+}
+```
+
+Response :
+
+```json
+{
+  "status": 200,
+  "error": false,
+  "message": "Ok.",
+  "data": {
+    "token": "abcdef"
   }
 }
 ```
