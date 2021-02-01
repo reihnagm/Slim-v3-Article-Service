@@ -91,3 +91,39 @@ Response :
   "results": []
 }
 ```
+
+## Update Article
+
+Request :
+
+- Method : PUT
+- Endpoint : `http://localhost:8080/api/articles/ee39bb72-9d66-4643-9688-93f86aecdd92`
+- Params :
+
+```json
+{
+  "uid": "ee39bb72-9d66-4643-9688-93f86aecdd92"
+}
+```
+
+- Body :
+
+```json
+{
+  "title": "text berubah",
+  "body": "body berubah",
+  "tags": ["aa47a3e2-95d9-4b74-a75a-4aecc8ea89ec", "dde26d8b-f67d-4f78-9293-950f35f7de2e"],
+  "event_uid": "8dc1dadb-95c8-44a9-8dbd-0efd6bc60de8"
+}
+```
+
+Response :
+
+```json
+{
+  "status": 201,
+  "error": false,
+  "message": "Ok.",
+  "results": []
+}
+```

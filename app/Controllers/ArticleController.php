@@ -112,6 +112,8 @@ class ArticleController extends Controller
     $uid = $args["uid"];
     $title = $req->getParsedBody()["title"];
     $body = $req->getParsedBody()["body"];
+    $tags = $req->getParsedBody()["tags"];
+    $eventUid = $req->getParsedBody()["event_uid"];
     $article = Article::where('uid', $uid)->firstOrFail();
     try {
       if (trim($title) == "") {
@@ -123,7 +125,8 @@ class ArticleController extends Controller
       $article->title = $title;
       $article->slug = Helper::slugify($title);
       $article->body = $body;
-      $article->tags()->sync('aa47a3e2-95d9-4b74-a75a-4aecc8ea89ec');
+      $article->event_uid = $eventUid;
+      $article->tags()->sync($tags);
       $article->update();
       return Helper::response($res, 200, false, "Ok.", []);
     } catch (\Exception $e) {
