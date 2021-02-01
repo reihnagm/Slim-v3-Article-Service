@@ -1,7 +1,5 @@
 # API Spec
 
----
-
 ## Prerequiste
 
 - Composer ([Composer](https://getcomposer.org/download/))
@@ -22,8 +20,6 @@ $ git clone https://github.com/reihnagm/Slim-v3-Article-Service.git
 $ cd Slim-v3-Article-Service
 $ composer install
 ```
-
----
 
 ---
 
