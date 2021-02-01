@@ -1,8 +1,39 @@
 # API Spec
 
+---
+
 ## Prerequiste
 
 - Composer [Composer](https://getcomposer.org/download/)
+- Postman - Download and Install [Postman](https://www.getpostman.com/)
+
+---
+
+## Installation
+
+### Clone
+
+---
+
+- Import DB article-service.sql
+
+```bash
+$ git clone https://github.com/reihnagm/Slim-v3-Article-Service.git
+$ cd Slim-v3-Article-Service
+$ composer install
+```
+
+---
+
+---
+
+### Start Development Server
+
+```bash
+$ composer run start --timeout=0
+```
+
+---
 
 ## All Article
 
