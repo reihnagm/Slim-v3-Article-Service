@@ -4,10 +4,9 @@ namespace App\Controllers;
 
 use App\Controllers\Controller;
 use Ramsey\Uuid\Uuid;
-use App\Models\Article;
 use App\Models\ArticleImage;
 use App\Helper\Helper;
-use App\Helper\Media;
+
 
 class MediaController extends Controller
 {

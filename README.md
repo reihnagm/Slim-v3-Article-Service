@@ -5,14 +5,21 @@
 
 ## Installation
 
-### Clone
-
 - Import DB article-service.sql
+
+### Clone
 
 ```bash
 $ git clone https://github.com/reihnagm/Slim-v3-Article-Service.git
 $ cd Slim-v3-Article-Service
 $ composer install
+```
+
+### Create Environment Variable
+
+```bash
+$ cp .env.example .env
+$ nano .env
 ```
 
 ### Start Development Server
