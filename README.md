@@ -1,5 +1,3 @@
-# API Spec
-
 ## Prerequiste
 
 - Composer ([Composer](https://getcomposer.org/download/))
@@ -22,6 +20,8 @@ $ composer install
 ```bash
 $ composer run start --timeout=0
 ```
+
+# API Spec
 
 ## All Article
 
