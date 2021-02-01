@@ -78,6 +78,7 @@ class ArticleController extends Controller
     $uid = Uuid::uuid4();
     $title = $req->getParsedBody()["title"];
     $body = $req->getParsedBody()["body"];
+    $tags = $req->getParsedBody()["tags"];
     $userUid = $req->getParsedBody()["user_uid"];
     $eventUid = $req->getParsedBody()["event_uid"];
     try {
@@ -100,7 +101,7 @@ class ArticleController extends Controller
         "body" => $body,
         "user_uid" => $userUid,
         "event_uid" => $eventUid
-      ])->tags()->attach('dde26d8b-f67d-4f78-9293-950f35f7de2e');
+      ])->tags()->attach($tags);
       return Helper::response($res, 201, false, "Ok.", []);
     } catch (\Exception $e) {
       return Helper::response($res, 500, true, $e->getMessage(), []);

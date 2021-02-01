@@ -74,12 +74,8 @@ Request :
 ```json
 {
   "title": "judul artikel pertama",
-  "slug": "judul-artikel-pertama",
   "body": "body pertama",
-  "tags": [
-    "0" => "fun",
-    "1" => "sports"
-  ],
+  "tags": ["ee7bf590-094a-49b8-8c26-4b3c31a758a6", "dde26d8b-f67d-4f78-9293-950f35f7de2e"],
   "user_uid": "ffeab53d-a1c4-405b-b114-95afce4eb8e9",
   "event_uid": "97404f1b-a63a-4004-be4e-10db5e1b22cc"
 }
