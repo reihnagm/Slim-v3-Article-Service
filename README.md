@@ -127,3 +127,36 @@ Response :
   "results": []
 }
 ```
+
+## Destroy Article
+
+Request :
+
+- Method : DELETE
+- Endpoint : `http://localhost:8080/api/articles/ee39bb72-9d66-4643-9688-93f86aecdd92`
+- Params :
+
+```json
+{
+  "uid": "ee39bb72-9d66-4643-9688-93f86aecdd92"
+}
+```
+
+- Body :
+
+```json
+{
+  "tags": ["aa47a3e2-95d9-4b74-a75a-4aecc8ea89ec", "dde26d8b-f67d-4f78-9293-950f35f7de2e"]
+}
+```
+
+Response :
+
+```json
+{
+  "status": 200,
+  "error": false,
+  "message": "Ok.",
+  "results": []
+}
+```

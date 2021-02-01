@@ -136,8 +136,9 @@ class ArticleController extends Controller
   public function destroy($req, $res, $args)
   {
     $uid = $args["uid"];
+    $tags = $req->getParsedBody()["tags"];
     $article = Article::where("uid", $uid)->firstOrFail();
-    $article->tags()->detach("aa47a3e2-95d9-4b74-a75a-4aecc8ea89ec");
+    $article->tags()->detach($tags);
     $article->delete();
     return Helper::response($res, 200, false, "Ok.", []);
   }
