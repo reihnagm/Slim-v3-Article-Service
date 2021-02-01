@@ -4,8 +4,8 @@
 
 ## Prerequiste
 
-- Composer [Composer](https://getcomposer.org/download/)
-- Postman - Download and Install [Postman](https://www.getpostman.com/)
+- Composer ([Composer](https://getcomposer.org/download/))
+- Postman - Download and Install ([Postman](https://www.getpostman.com/))
 
 ---
 
