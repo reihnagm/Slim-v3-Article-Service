@@ -7,7 +7,6 @@ use Ramsey\Uuid\Uuid;
 use App\Models\ArticleImage;
 use App\Helper\Helper;
 
-
 class MediaController extends Controller
 {
   public function createKey($req, $res)
