@@ -1,14 +1,14 @@
 {
-  "name": "profile-service/slim",
-  "description": "API for Profile Service",
+  "name": "article-service/slim",
+  "description": "API for Article Service",
   "require": {
     "ext-json": "*",
     "slim/slim": "^3.7",
+    "slim/csrf": "^1.0",
     "slim/twig-view": "^2.1",
     "illuminate/database": "^5.3",
     "firebase/php-jwt": "^5.0",
     "vlucas/phpdotenv": "^4.1",
-    "slim/csrf": "^1.0",
     "ramsey/uuid": "^3.9",
     "davidepastore/slim-validation": "^0.5.1",
     "tuupola/slim-jwt-auth": "^3.4",
@@ -25,4 +25,3 @@
     "watch": "composer run start --timeout=0"
   }
 }
-

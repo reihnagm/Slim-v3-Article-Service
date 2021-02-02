@@ -221,6 +221,14 @@ Request :
 }
 ```
 
+- Body :
+
+```json
+{
+  "binary": "file"
+}
+```
+
 - Header :
 
 ```json
